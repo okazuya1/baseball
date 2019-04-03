@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Baseball</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <ul id="gNavi">  
+    <li><%= link_to "HOME", root_path %></li>  
+    <li><%= link_to "優勝高校", articles_path %></li>   
+　</ul>  
+    <hr>
+    <%= yield %>
+  </body>
+</html>
